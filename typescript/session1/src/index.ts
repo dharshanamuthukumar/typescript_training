@@ -1,4 +1,8 @@
-console.log("TypeScript is running");
-const age: number = 30;
-// We use tsc --noEmit to check for TypeScript errors without generating JavaScript files.
-// It is useful during development or in CI/CD pipelines when we only want to validate the code.
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+console.log(add(2, 3));
+
+// The type annotations are removed during transpilation because JavaScript does not support types.
+// TypeScript uses them only for type checking during development.
